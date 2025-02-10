@@ -120,7 +120,7 @@ document.addEventListener('countryDataLoaded', function(event) {
                         <a href="index.html?c=${encodeURIComponent(country.name.common)}">
                             <div class="card">
                                 <div class="icon">
-                                    <svg data-src="assets/maps/${country.cca2}/vector.svg" fill="#fff"></svg>
+                                    <svg data-src="assets/maps/${country.cca2.toLowerCase()}/vector.svg" fill="#fff"></svg>
                                 </div>
                                 <span>${country.name.common}</span>
                             </div>
@@ -154,7 +154,7 @@ document.addEventListener('countryDataLoaded', function(event) {
     const mapWrapper = document.getElementById("map-wrapper");
     
     mapWrapper.innerHTML = `
-                <img src="assets/maps/${countryData.cca2}/vector.svg" alt="">
+                <img src="assets/maps/${countryData.cca2.toLowerCase()}/vector.svg" alt="">
                 <div class="overlay">
                     <div class="row">
                         <div class="icon">
