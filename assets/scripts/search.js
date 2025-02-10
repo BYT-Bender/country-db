@@ -107,5 +107,5 @@ function performSearch(value, searchEngine = "google") {
 
 function getSearchUrl(value, searchEngine) {
     const query = encodeURIComponent(value);
-    return `http://127.0.0.1:5500/index.html?c=${query}`;
+    return `https://byt-bender.github.io/country-db?c=${query}`;
 }
