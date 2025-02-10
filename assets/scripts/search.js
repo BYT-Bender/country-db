@@ -106,5 +106,5 @@ function performSearch(value) {
 
 function getSearchUrl(value) {
     const query = encodeURIComponent(value);
-    return `https://byt-bender.github.io/country-db?c=${query}`;
+    return `https://byt-bender.github.io/country-db/index.html?c=${query}`;
 }
