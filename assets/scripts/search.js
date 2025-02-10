@@ -98,14 +98,13 @@ function removeActive(rows) {
     Array.from(rows).forEach(row => row.classList.remove("autocomplete-active"));
 }
 
-function performSearch(value, searchEngine = "google") {
+function performSearch(value) {
     if (!value.trim()) return;
-
-    const searchUrl = getSearchUrl(value, searchEngine);
+    const searchUrl = getSearchUrl(value);
     if (searchUrl) window.location.href = searchUrl;
 }
 
-function getSearchUrl(value, searchEngine) {
+function getSearchUrl(value) {
     const query = encodeURIComponent(value);
     return `https://byt-bender.github.io/country-db?c=${query}`;
 }
