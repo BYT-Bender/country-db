@@ -13,6 +13,10 @@ function shortNumberFormat(num) {
 document.addEventListener('countryDataLoaded', function(event) {
     const countryData = event.detail[0];
 
+    getTemperature(countryData.latlng[0], countryData.latlng[1], apiKey)
+        .then(temp => tempContainer.textContent = `${temp}°C`)
+        .catch(err => console.error(err));
+
     const bgEffect = document.querySelector(".bg-effect");
     bgEffect.style.backgroundImage = `url(${countryData.flags.svg})`;
 
