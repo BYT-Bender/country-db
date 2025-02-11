@@ -50,7 +50,7 @@ body {
         left: 0;
         height: 100%;
         width: 100%;
-        backdrop-filter: blur(20px) brightness(0.6);
+        backdrop-filter: blur(20px) brightness(0.8);
         background-color: rgba(39, 39, 39, 0.9);
     }
 
@@ -71,10 +71,22 @@ body {
             gap: 2rem;
             height: 100%;
             align-items: center;
-            /* width: max-content; */
-            /* overflow-x: scroll; */
-            animation: marquee 20s linear infinite alternate;
-            /* animation: scrollRight 10s linear infinite; */
+
+            &:nth-of-type(1) {
+                animation: marquee 20s linear infinite alternate;
+            }
+            &:nth-of-type(2) {
+                animation: marquee 16s linear infinite alternate;
+            }
+            &:nth-of-type(3) {
+                animation: marquee 15s linear infinite alternate;
+            }
+            &:nth-of-type(4) {
+                animation: marquee 18s linear infinite alternate;
+            }
+            &:nth-of-type(5) {
+                animation: marquee 12s linear infinite alternate;
+            }
 
             & .item {
                 /* border: 1px solid #ffffff; */
