@@ -17,7 +17,3 @@ async function getTemperature(lat, lon, apiKey) {
 
 const apiKey = "b2e27412b03b67f5a4c868cd9410e2c9";
 const tempContainer = document.getElementById("temperature");
-
-getTemperature(28.7041, 77.1025, apiKey)
-    .then(temp => tempContainer.textContent = `${temp}°C`)
-    .catch(err => console.error(err));
