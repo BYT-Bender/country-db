@@ -106,5 +106,5 @@ function performSearch(value) {
 
 function getSearchUrl(value) {
     const query = encodeURIComponent(value);
-    return `index.html?c=${query}`;
+    return `search.html?c=${query}`;
 }
