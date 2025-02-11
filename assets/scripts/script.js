@@ -121,7 +121,7 @@ document.addEventListener('countryDataLoaded', function(event) {
             .then(borderCountries => {
                 const borderHTML = borderCountries
                     .map(country => `
-                        <a href="index.html?c=${encodeURIComponent(country.name.common)}">
+                        <a href="search.html?c=${encodeURIComponent(country.name.common)}">
                             <div class="card">
                                 <div class="icon">
                                     <svg data-src="assets/maps/${country.cca2.toLowerCase()}/vector.svg" fill="#fff"></svg>
