@@ -64,6 +64,36 @@ main {
     margin-bottom: 3rem;
     position: relative;
 
+    & .logo {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        height: fit-content;
+        transform: translateY(-50%);
+        border-radius: 0.4rem;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        & img,
+        & svg {
+            height: 100%;
+            width: auto;
+        }
+
+        & .name {
+            /* border: 1px solid #ffffff; */
+            font-size: 2.25rem;
+            font-weight: 600;
+            display: flex;
+            gap: 0.4rem;
+            margin-top: 0.4rem;
+            color: #e05f47;
+            z-index: 2;
+        }
+    }
+
     & .search-bar {
         /* border: 1px solid #ffffff; */
 		display: flex;
